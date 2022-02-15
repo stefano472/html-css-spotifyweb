@@ -5,7 +5,16 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #707070;
-    text-decoration: none;
+}
+#top-page {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+footer {
+    background-color: #282828;
+    height: 10vh;
+    width: 100%;
 }
 
 /************************ utilities ************************/
@@ -25,6 +34,7 @@
     margin-right: 0.5rem;
 }
 a {
+    text-decoration: none;
     font-size: 0.7rem;
     display: flex;
     align-items: center;
@@ -32,29 +42,14 @@ a {
 a:hover {
     color: white;
 }
+a:hover img{
+    filter: brightness(2);
+}
 ul {
     list-style-type: none;
 }
 /************************ debug ************************/
-#top-page {
-    height: 90vh;
-    width: 100%;
-    display: flex;
-}
-footer {
-    background-color: #282828;
-    height: 10vh;
-    width: 100%;
-}
 
-aside {
-    min-width: 230px;
-    max-width: 230px;
-    background-color: black;
-    padding: 2vh;
-    display: flex;
-    flex-direction: column;
-}
 #right-page {
     background-color: #141922;
     width: inherit;
@@ -66,6 +61,15 @@ header {
 }
 
 /************************ aside ************************/
+aside {
+    min-width: 230px;
+    max-width: 230px;
+    background-color: black;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* logo section */
 .logo {
     height: 6vh;
