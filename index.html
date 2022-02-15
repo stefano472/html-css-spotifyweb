@@ -6,19 +6,67 @@
     <link rel="stylesheet" href="css/query640.css">
     <link rel="stylesheet" href="css/query560.css">
     <link rel="icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
 </head>
 <body>
-    <div id="top-page">
-        <aside></aside>
-        <div id="right-page">
-            <header></header>
-            <main></main>
+    <div id="top-page"> <!-- parte alta webapp -->
+        
+        <aside> <!-- parte laterale alta con navigator -->
+            <div class="logo"> <!-- logo stessa altezza header -->
+                <img class="w-70" src="img/logo.svg" alt="Logo con titolo">
+            </div>
+            <nav>
+                <a class="m-bottom05" href="#"><img class="m-right05 h-15" src="img/home.svg" alt="home icon">Home</a>
+                <a class="m-bottom05" href="#"><img class="m-right05 h-15" src="img/search.svg" alt="search icon">Cerca</a>
+                <a class="m-bottom05" href="#"><img class="m-right05 h-15" src="img/libreria.svg" alt="library">La tua libreria</a>
+            </nav>
+            <div class="playlist">
+                <h3 class="m-bottom05">PLAYLIST</h3>
+                <a class="m-bottom05" href="#">
+                    <i class="fa-solid fa-square-plus m-right05"></i>
+                    <span> Crea Playlist</span>
+                </a>
+                <ul>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                </ul>
+            </div>
+            <div class="bottom-aside">
+                <div class="download"> 
+                    <a class="m-bottom05" href="#"><img class="m-right05" src="img/download.svg" alt="download icon">Installa App</a>
+                </div>
+                <div class="profile">
+                    <img class="m-right05 h-15" src="img/profile.svg" alt=" profile icon">John Doe
+                </div>
+            </div>
+        </aside>
+        
+        <div id="right-page"> <!-- main part con header fisso top e contenuto sotto -->
+            
+            <header> <!-- header fisso in alto -->
+
+            </header>
+            
+            <main> <!-- contenuto della pagina -->
+
+            </main>
         </div>
     </div>
-    <footer></footer>
+    
+    <footer> <!-- barra sotto fissa con player e infos -->
+
+    </footer>
 </body>
 </html>

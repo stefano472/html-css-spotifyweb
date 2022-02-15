@@ -2,4 +2,116 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #707070;
+    text-decoration: none;
+}
+
+/************************ utilities ************************/
+.w-70 {
+    width: 70%;
+}
+.w-100 {
+    width: 100%;
+}
+.h-15 {
+    height: 1.5rem;
+}
+.m-bottom05 {
+    margin-bottom: 0.5rem;
+}
+.m-right05 {
+    margin-right: 0.5rem;
+}
+a {
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+a:hover {
+    color: white;
+}
+ul {
+    list-style-type: none;
+}
+/************************ debug ************************/
+#top-page {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+footer {
+    background-color: #282828;
+    height: 10vh;
+    width: 100%;
+}
+
+aside {
+    min-width: 230px;
+    max-width: 230px;
+    background-color: black;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+#right-page {
+    background-color: #141922;
+    width: inherit;
+}
+
+header {
+    height: 8vh;
+    background-color: #707070;
+}
+
+/************************ aside ************************/
+/* logo section */
+.logo {
+    height: 6vh;
+}
+
+/* nav section */
+nav {
+    margin: 1rem 0;
+}
+
+/* playlist section */
+.playlist {
+    height: -webkit-fill-available;
+}
+h3 {
+    font-size: 1rem;
+    color: white;
+}
+.playlist i {
+    font-size: 2rem;
+}
+.playlist span {
+    font-size: 0.9rem;
+}
+.playlist a:hover i, 
+.playlist a:hover span {
+    color: white;
+}
+.playlist li a {
+    margin-bottom: 0.8rem;
+}
+
+/* bottom aside section */
+.download img {
+    height: 1rem;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #707070;
+    padding: 0.5rem 0 0;
+    color: white;
+    font-size: 0.8rem;
+}
+.profile img {
+    padding: 2px;
+    border-radius: 50px;
+    background-color: #707070;
 }
