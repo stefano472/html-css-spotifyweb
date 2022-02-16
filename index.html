@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/query880.css">
-    <link rel="stylesheet" href="css/query640.css">
-    <link rel="stylesheet" href="css/query560.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <link rel="icon" href="img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,14 +18,24 @@
         
         <aside> <!-- parte laterale alta con navigator -->
             <div class="logo"> <!-- logo stessa altezza header -->
-                <img class="w-70" src="img/logo.svg" alt="Logo con titolo">
+                <img class="w-70 display-none-query" src="img/logo.svg" alt="Logo con titolo">
+                <img class="w-70 display-none" src="img/logo-small.svg" alt="Logo small query">
             </div>
             <nav> <!-- navigator home search library-->
-                <a class="m-bottom05" href="#"><img class="m-right05 h-15" src="img/home.svg" alt="home icon">Home</a>
-                <a class="m-bottom05" href="#"><img class="m-right05 h-15" src="img/search.svg" alt="search icon">Cerca</a>
-                <a class="m-bottom05" href="#"><img class="m-right05 h-15" src="img/libreria.svg" alt="library">La tua libreria</a>
+                <a class="m-bottom05" href="#">
+                    <img class="m-right05 h-15" src="img/home.svg" alt="home icon">
+                    <span class="display-none-query">Home</span> 
+                </a>
+                <a class="m-bottom05" href="#">
+                    <img class="m-right05 h-15" src="img/search.svg" alt="search icon">
+                    <span class="display-none-query">Cerca</span> 
+                </a>
+                <a class="m-bottom05" href="#">
+                    <img class="m-right05 h-15" src="img/libreria.svg" alt="library">
+                    <span class="display-none-query">La tua libreria</span> 
+                </a>
             </nav>
-            <div class="playlist"> <!--playlist-->
+            <div class="playlist display-none-query"> <!--playlist-->
                 <h2 class="m-bottom05">PLAYLIST</h2>
                 <a class="m-bottom05" href="#">
                     <i class="fas fa-plus-square m-right05"></i>
@@ -45,10 +53,14 @@
             </div>
             <div class="bottom-aside"> <!-- bottom aside part profile-->
                 <div class="download"> 
-                    <a class="m-bottom05" href="#"><img class="m-right05" src="img/download.svg" alt="download icon">Installa App</a>
+                    <a class="m-bottom05" href="#">
+                        <img class="m-right05" src="img/download.svg" alt="download icon">
+                        <span class="display-none-query">Installa App</span>
+                    </a>
                 </div>
                 <div class="profile">
-                    <img class="m-right05 h-15" src="img/profile.svg" alt=" profile icon">Stefano Piotti
+                    <img class="m-right05 h-15" src="img/profile.svg" alt=" profile icon">
+                    <span class="display-none-query">Stefano Piotti</span>
                 </div>
             </div>
         </aside>
@@ -71,84 +83,84 @@
                 </nav>
                 <section id="played"> <!-- already played section-->
                     <h1 class="m-bottom10">Recently played</h1>
-                    <div class="gallery m-bottom15">
-                        <div class="item-one flex-gallery-6">
+                    <div class="gallery m-bottom10">
+                        <div class="item-one flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/metal_lifting.jpg" alt="played 1 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
                             </div>
                             <h3 class="m-bottom02">Heavy Metal</h3>
-                            <span>Subtitle</span>
+                            <span class="artist">Subtitle</span>
                         </div>
-                        <div class="item-two flex-gallery-6">
+                        <div class="item-two flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/stranger.jpeg" alt="played 2 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
                             </div>
                             <h3 class="m-bottom02">Stranger Things, Vol. 1(a Netflix Original Series Soundtrack</h3>
-                            <span>Kyle Dixon &amp; Michael Stein</span>
+                            <span class="artist">Kyle Dixon &amp; Michael Stein</span>
                         </div>
-                        <div class="item-three flex-gallery-6">
+                        <div class="item-three flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/aquietplace.jpeg" alt="played 3 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
                             </div>
                             <h3 class="m-bottom02">A Quite Place</h3>
-                            <span>Subtitle</span>
+                            <span class="artist">Subtitle</span>
                         </div>
-                        <div class="item-four flex-gallery-6">
+                        <div class="item-four flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/split.jpeg" alt="played 4 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
                             </div>
                             <h3 class="m-bottom02">Split</h3>
-                            <span>Subtitle</span>
+                            <span class="artist">Subtitle</span>
                         </div>
-                        <div class="item-five flex-gallery-6">
+                        <div class="item-five flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/cure.jpeg" alt="played 5 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
                             </div>
                             <h3 class="m-bottom02">A Cure for Wellness</h3>
-                            <span>Subtitle</span>
+                            <span class="artist">Subtitle</span>
                         </div>
-                        <div class="item-six flex-gallery-6">
+                        <div class="item-six flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/sinister.jpeg" alt="played 6 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
                             </div>
                             <h3 class="m-bottom02">Sinister</h3>
-                            <span>Subtitle</span>
+                            <span class="artist">Subtitle</span>
                         </div>
                     </div>
                 </section>
                 <section id="for-you"> <!-- dedicated section-->
                     <h1>Creato per Stefano Piotti</h1>
                     <span class="m-bottom10">Più ascolti, più accurati saranno i suggerimenti</span>
-                    <div class="gallery m-bottom15">
-                        <div class="item-one flex-gallery-6">
+                    <div class="gallery m-bottom10">
+                        <div class="item-one flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/radar.jpeg" alt="for-you 1 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
                             </div>
                             <h3 class="m-bottom02">Release Radar</h3>
                         </div>
-                        <div class="item-two flex-gallery-6">
+                        <div class="item-two flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/stranger.jpeg" alt="for-you 2 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
                             </div>
                             <h3 class="m-bottom02">Stranger Things, Vol. 1(a Netflix Original Series Soundtrack</h3>
-                            <span>Kyle Dixon &amp; Michael Stein</span>
+                            <span class="artist">Kyle Dixon &amp; Michael Stein</span>
                         </div>
-                        <div class="item-three flex-gallery-6">
+                        <div class="item-three flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/mixdaily.jpeg" alt="for-you 3 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
                             </div>
                             <h3 class="m-bottom02">Daily Mix 1</h3>
                         </div>
-                        <div class="item-four flex-gallery-6">
+                        <div class="item-four flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/split.jpeg" alt="for-you 4 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
@@ -160,22 +172,22 @@
                 <section id="popular"> <!-- popular section-->
                     <h1>Artisti più popolari</h1>
                     <span class="m-bottom10">Più ascolti, più accurati saranno i suggerimenti</span>
-                    <div class="gallery m-bottom15">
-                        <div class="item-one flex-gallery-6">
+                    <div class="gallery m-bottom10">
+                        <div class="item-one flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/youg.jpeg" alt="popular 1 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
                             </div>
                             <h3 class="m-bottom02">Lana del Rey</h3>
-                            <span>Subtitle</span>
+                            <span class="artist">Subtitle</span>
                         </div>
-                        <div class="item-two flex-gallery-6">
+                        <div class="item-two flex-gallery">
                             <div class="img-gallery m-bottom05">
                                 <img class="w-100" src="img/einaudi.jpeg" alt="popular 2 img">
                                 <div class="overlay"><button><i class="far fa-play-circle"></i></button></div>
                             </div>
                             <h3 class="m-bottom02">Ludovico Einaudi Best Of</h3>
-                            <span>Ludovico Einaudi</span>
+                            <span class="artist">Ludovico Einaudi</span>
                         </div>
                     </div>
                 </section>
