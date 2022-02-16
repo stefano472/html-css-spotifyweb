@@ -8,6 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
 }
 #top-page {
     height: calc(100vh - 90px);
@@ -40,6 +41,7 @@ body {
 /************************ scrollbarrrrrrrrrrrrrrrrrrrr ************************/
 
 footer {
+    z-index: 5;
     color: white;
     background-color: #282828;
     height: 90px;
@@ -123,7 +125,7 @@ aside {
 
 /* logo section */
 .logo {
-    height: 6vh;
+    height: 60px;
 }
 
 /* nav section */
