@@ -104,7 +104,7 @@ h3 {
     height: 100%;
     position: absolute;
     left: -2vh;
-    border-left: 2px solid aquamarine;
+    border-left: 3px solid aquamarine;
 
 }
 .active-main {
@@ -113,7 +113,7 @@ h3 {
 .active-main::after {
     content: "";
     width: 3.5rem;
-    height: 2px;
+    height: 1px;
     background-color: aquamarine;
     position: absolute;
     left: 50%;
