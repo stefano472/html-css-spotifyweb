@@ -5,17 +5,8 @@
   .flex-gallery {
     flex-basis: calc(100% / 4 - 1.125vw);
   }
-  .player-line-big {
+  #PlaySlider {
     width: 28vw;
-  }
-  .player-white-big {
-      width: 4vw;
-  }
-  .player-line-small {
-    width: 7.5vw;
-  }
-  .player-white-small {
-    width: 1.5vw;
   }
 }
 
@@ -23,11 +14,8 @@
   .flex-gallery {
     flex-basis: calc(100% / 2 - 0.75vw);
   }
-  .player-line-big {
+  #PlaySlider {
     width: 21vw;
-  }
-  .player-white-big {
-      width: 3vw;
   }
   .central-foot i {
     margin: 0 0.8rem;
